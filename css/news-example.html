@@ -4,125 +4,159 @@
   <meta charset="utf-8">
   <title></title>
   <style>
-    .panel{
-      display: block;
-      width: 900px;
-      height: 540px;
-      margin: 0 auto;
-      background: url(https://ssl.pstatic.net/static/newsstand/img/20121231/bg_panel.png) center no-repeat;
-    }
-    .header{
-      width: 840px;
-      height: 91px;
-      margin:0 auto;
-      padding: 20px 0 0 0;
-      border-bottom: 2px #000 solid;
-    }
-    .logo{
-      width: 260px;
-      height: 55px;
-      font-size:0;
-      background: url(https://ssl.pstatic.net/static/newsstand/up/2014/0708/nsd11654791.gif) no-repeat;
-      float:left;
-      border: 0px;
-    }
-    .banner{
-      width: 468px;
-      height: 60px;
-      background: url(https://ssl.pstatic.net/tveta/libs/1185/1185470/83618d5ca61a4751341b_20180103104218021.jpg);
-      float:right;
-      border: 0;
-      margin: 20px auto;
-    }
-    .button-group{
-      width: 840px;
-      height: 25px;
-      clear: left;
-      margin:-30px auto 20px auto;
-    }
-    .button-group{
-    }
-    .button-group .subscribe{
-      width: 66px;
-      height: 22px;
-      font-size: 0;
-      background: url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -187px -199px no-repeat;
-      vertical-align:middle;
-      border: 0;
-    }
-    .button-group .user-comment{
-      width: 75px;
-      height: 22px;
-      font-size: 0;
-      background: url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -293px -174px no-repeat;
-      vertical-align:middle;
-      display: inline-block;
-      border: 0;
-    }
-    .button-group .sns-export{
-      width: 28px;
-      height: 22px;
-      font-size:0;
-      background: url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -500px -270px no-repeat;
-      vertical-align: middle;
-      border: 0;
-    }
-    .button-group span{
-      font-size: 11px;
-    }
-    .left-top{
-      width: 480px;
-      height: 191px;
-      margin: 20px 0 0 0;
-      float: left;
-      outline:1px #F00 solid;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-    .left-top .logo1{
-      width: 453px;
-      height: 25px;
-      font-size:25px;
-      text-align:center;
-      outline: 1px #F00 solid;
-    }
-    .left-top img{
-      width: 221px;
-      height: 122px;
-      float:left;
-    }
-    .right-top{
-      width: 360px;
-      height: 192px;
-      outline: 1px #F00 solid;
-      float: right;
-    }
+  ul{ margin: 0; padding: 0; list-style: none;}
+  .wrapper{ width: 900px; height: 540px; margin: 0 auto; padding:0 50px; background: url(https://ssl.pstatic.net/static/newsstand/img/20121231/bg_panel.png) no-repeat center 0; }
+  .header{ height: 111px; padding-top:20px; margin:0 30px; box-sizing:border-box; border-bottom: 2px #000 solid; }
+  .logo{ width: 260px; height: 55px; float:left; }
+  .banner{ width: 468px; height: 60px; margin-top: 20px; float:right; }
+  .단추집단{ clear:left; }
+  .단추집단 .구독단추{ width: 66px; height: 22px; font-size:0; border:0; background:url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -187px -199px no-repeat; vertical-align:middle; }
+  .단추집단 .이용자한마디단추{ display:inline-block; width: 75px; height: 22px; font-size:0; background:url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -293px -174px no-repeat; vertical-align:middle; }
+  .단추집단 .소셜보내기단추{ width: 28px; height: 22px; font-size:0; border:0; background:url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -500px -270px no-repeat;; vertical-align:middle; }
+  .단추집단 .편집시간{ font-size:12px; }
+  .contents{width: auto; height: 380px; margin: 25px 30px 0 30px; position: relative;}
+  .article-left{border-right: 1px #000 solid; position: absolute; left: 0; top: 0; right: 360px; bottom: 0; }
+  .article-right{position: absolute; right: 0; top: 0; left: 480px; bottom: 0; }
+  .article-left .box1{height: 190px; }
+  .article-left .box2{height: 190px; border-top: 1px #000 solid; }
+  .article-right .box1{height: 220px;border-bottom: 1px #000 solid;}
+  .article-right .box2{height: 160px;}
 
+  .article-left .article1{ position: relative; }
+  .article-left .article1 h2{ margin:0 0 15px 0; padding-left:16px; font-size:24px; font-family: Dotum; }
+  .article-left .article1 .article1-thumbnail{ width: 221px;height: 122px;}
+  .article-left .article1 p{ font-size:12px; line-height: 21px; width: 248px; position: absolute; right:0; top:33px; }
 
+  .article-left .article2{ padding:10px 8px 0; }
+  .article-left .article2 li{width: 134px; float: left; margin-left: 30px; }
+  .article-left .article2 li:first-child{ margin-left:0; }
+  .article-left .article2 .article2-thumbnail { overflow: hidden; height: 81px; }
+  .article-left .article2 .article2-thumbnail img{ width: 100%;}
+  .article-left .article2 strong, .article-left .article2 p{ font-size: 13px; line-height: 14px; margin: 5px 0; }
 
+  .article-right .article1{padding:5px 0 5px 20px; margin-left: 20px;}
+  .article-right .article1 img{float: left; margin-right: 10px;}
+  .article-right .article1 li{margin:10px 0; height: 51px;}
+  .article-right .article1 p{margin: 0;font-size: 13px;}
+  .article-right .article1 p strong{display: block;}
+
+  .article-right .article2 li{font-size: 13px; margin-bottom: 10px;padding-left: 20px;}
   </style>
 </head>
 <body>
-  <div class="panel">
+  <div class="wrapper">
     <div class="header">
-      <div class="logo"></div>
-      <div class="banner"></div>
-      <div class="button-group">
-        <button class="subscribe">구독하기</button>
-        <a href="" class="user-comment">이용자한마디</a>
-        <button class="sns-export">공유하기</button>
-        <span>08-12 00:02편집</span>
+      <div class="logo">
+        <img src="https://ssl.pstatic.net/static/newsstand/up/2014/0708/nsd11654791.gif" alt="">
+      </div>
+
+      <div class="banner">
+        <img src="https://ssl.pstatic.net/tveta/libs/1185/1185470/04c3e6bdd0d8bf5169e1_20190328163535155.png" alt="">
+      </div>
+      <div class="단추집단">
+        <button class="구독단추">구독하기</button>
+        <a href="" class="이용자한마디단추">이용자한마디</a>
+        <button class="소셜보내기단추">소셜보내기</button>
+        <span class="편집시간">08-12 00:02편집</span>
       </div>
     </div>
-    <div class="left-top">
-      <a href="http://www.idaegu.com/newsView/idg201908110066" target="_blank" class="logo1">한·일 무역전쟁 불구 대구-히로시마현 교직원 교류 ‘눈길’</a>
-      <img src="https://ssl.pstatic.net/static/newsstand/2019/0812/idaegu/000654/001.jpg">
-    </div>
-    <div class="right-top">
+    <div class="contents">
+      <div class="article-left">
+        <div class="box1">
+          <!-- 첫 번째 박스 -->
+          <div class="article1">
+            <h2>국채보상운동 출발시기 알려진 것보다 …</h2>
+            <div class="article1-thumbnail">
+              <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/142758/001.jpg" alt="">
+            </div>
+            <p>경주 최부자집 창고에서 일제강점기 전후의 보물급 문서 수만건이 쏟아져 나왔다. 경주최부자민족정신선양회 최창호 이사가 문서가 출토된 궤짝을 열어보고 있다. 국채보상운동의 출발 시기가 지금까지 알려진 것보다 더 빨랐던 것으로 보여지는 서책과 경주 최</p>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="article2">
+            <ul>
+              <li>
+                <div class="article2-thumbnail">
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/142758/002.jpeg" alt="">
+                </div>
+                <strong>대구 서구청 양궁부, 폴란드 국제양궁</strong>
+                <p>대구 서구청 여자양궁선수단은 지난 9</p>
+              </li>
+              <li>
+                <div class="article2-thumbnail">
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/142758/003.jpg" alt="">
+                </div>
+                <strong>경주국채보상운동 역사 최부자집 창</strong>
+                <p>국채보상운동 참가를 비롯한 경주 독</p>
+              </li>
+              <li>
+                <div class="article2-thumbnail">
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/142758/004.jpg" alt="">
+                </div>
+                <strong>80여명 사상자 낸 대보 사우나 화재,</strong>
+                <p>지난 2월19일 화재가 발생한 대보사우</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="article-right">
+        <div class="box1">
+          <div class="article1">
+            <ul>
+              <li>
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/142758/005.jpg" alt="">
+<p>
+                <strong>오달수 독립영화 '요시찰'로 1년반 만</strong>
+                사진=연합뉴스 배우 오달수가 독립영화 '요시찰'로 스크린 컴백</p>
+              </li>
+              <li>
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/142758/006.jpg" alt="">
+                <p>
+                <strong>낙동강에 뛰어내린 구미 고등학생 ,</strong>
+                구미경찰서 전경.낙동강에 투신한 고교생이 실종 15시간 만에 숨진 채 발견</p>
+              </li>
+              <li>
+<p>
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/142758/007.jpg" alt="">
+                <strong>“닭 볶음탕 시키신 분”-가야산국립</strong>
+                가야산국립공원사무소는 야영장 반찬(도토리묵 무침·사진), 더덕구이, 전,</p>
+              </li>
+            </ul>
 
-    </div>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="article2">
+            <ul>
+              <li>
+                <strong>'나노메딕스' 사내이사로 영입된 '짐 로저스'</strong>
+              </li>
+              <li>
+                <strong>'DHC'가 뱉은 망언에 올리브 버진 오일 클렌징</strong>
+              </li>
+              <li>
+                <strong>솜혜인, 양성애자 커밍아웃 후 계속되는 추측</strong>
+              </li>
+              <li>
+                <strong>세상읽기…그것은 보수가 아니다</strong>
+              </li>
+              <li>
+                <strong>공동칼럼…욕망의 질주와 인성교육</strong>
+              </li>
+              <li>
+                <strong>대일광장…훈민정음 해례본의 기구한 운명</strong>
+              </li>
+            </ul>
 
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
+
 </body>
 </html>
