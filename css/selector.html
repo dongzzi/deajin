@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+  /*
+  a:link{color:#000}
+  a:visited{color: red;}
+  a:link{color:#000}
+  a:link{color:#000}
+  .name:after{
+    content:"님";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border:1px #F00 solid;
+  }
+  .name:before{ content:"환영합니다." }
+  */
+  input[type="text"]{color:red}
+  a[href^="http://"]{color:red}
+  #menu>ul>li:nth-child(even){border:1px #F00 solid;}
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <ul>
+      <li>Menu item01
+        <ul>
+          <li><a href="http://www.naver.com">Menu item01</a></li>
+          <li class="sub on">Menu item02</li>
+          <li>Menu item03</li>
+          <li class="sub">Menu item04</li>
+          <li class="sub">Menu item05</li>
+        </ul>
+      </li>
+      <li id="target"><input type="button" value="Hell world"></li>
+      <li><input type="text" title="this is form."></li>
+      <li><input type="text" title="this is form."></li>
+      <li>
+        <span class="name">
+          <span>환영합니다.</span>
+          님
+        </span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
