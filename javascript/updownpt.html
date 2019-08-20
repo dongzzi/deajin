@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    var ranNum = Math.floor(Math.random() * 50);
+    var count = 5;
+    for(var i=0; i<count; i++){
+      var userNumber = prompt('숫자를 입력하세요.')
+      if(ranNum > userNumber){
+        alert('Up')
+      }else if(ranNum < userNumber){
+        alert('Down')
+      }else if(ranNum == userNumber){
+        alert('정답입니다!')
+        break;
+      }else{
+        alert('정확한 숫자를 입력하세요!')
+      }
+    }
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
